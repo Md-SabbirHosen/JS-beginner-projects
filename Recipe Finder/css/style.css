@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --first-color: #6c9daf;
+  --second-color: #0f3e50;
+  --third-color: #93afb8;
+  --fourth-color: #01161e;
+  --fifth-color: #ffffff;
+}
+
+body {
+  background-color: var(--first-color);
+  color: var(--fourth-color);
+  font-family: "Poppins", sans-serif;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.searching-section {
+  text-align: center;
+  letter-spacing: 0.1rem;
+}
+
+form {
+  text-align: center;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* gap: 1rem; */
+}
+
+form input[type="text"] {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  width: 30rem;
+  border-radius: 20px;
+  border: var(--first-color);
+}
+
+form input[type="text"]::placeholder {
+  color: var(--third-color);
+}
+
+form input[type="text"]:focus {
+  outline: none;
+}
+
+form input[type="submit"] {
+  margin-left: -7.25rem;
+  border-radius: 20px;
+  border: var(--second-color);
+  text-transform: uppercase;
+  color: var(--fifth-color);
+  background-color: var(--second-color);
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  transition: all 0.2s;
+}
+
+form input[type="submit"]:hover {
+  transform: scale(1.1);
+}
+
+.recipe-items-container {
+  padding: 0 2rem;
+  overflow: hidden;
+}

@@ -1,12 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Recipe Finder</title>
+    <title>Recipe Finder App</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <h1>It's a recipe Finder Project</h1>
+    <section class="searching-section">
+      <h1>Recipe Finder App</h1>
+      <form action="">
+        <input type="text" placeholder="Search over 1,000,000 recipes...." />
+        <input type="submit" value="Search" />
+      </form>
+    </section>
+    <section class="recipe-items-container">
+      <div class="card-item">
+        <div class="img-container">
+          <!-- <img src="./asset/arvid-skywalker-mfXuLmMDCZM-unsplash.jpg" alt="" /> -->
+        </div>
+        <div class="info-container-1">
+          <p>Name:Pizza</p>
+        </div>
+        <div class="info-container-2">
+          <div class="minutes-info">
+            <span><i class="fa-solid fa-clock"></i></span> 75 minutes
+          </div>
+          <div class="people-info">
+            <span><i class="fa-solid fa-users"></i></span> 10 Servings
+          </div>
+          <div class="increment-decrement-btns">
+            <button class="decrement">
+              <i class="fa-solid fa-circle-minus"></i>
+            </button>
+            <button class="increment">
+              <i class="fa-solid fa-circle-plus"></i>
+            </button>
+          </div>
+        </div>
+        <div class="info-container-3"><h3>Recipe Ingredients</h3></div>
+      </div>
+    </section>
   </body>
 </html>
